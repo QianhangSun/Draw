@@ -75,7 +75,11 @@ class ViewController: UIViewController {
     }
 
  
-   
+    func test() {
+        
+    }
+    
+    
     @IBAction func eraseDrawing(_ sender: Any) {
         
         (red,green,blue) = (1,1,1)
