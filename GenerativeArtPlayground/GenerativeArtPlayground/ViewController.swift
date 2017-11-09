@@ -1,22 +1,23 @@
 //
 //  ViewController.swift
-//  DrawingApp
+//  GenerativeArtPlayground
 //
-//  Created by 孙千航 on 10/22/17.
+//  Created by 孙千航 on 11/8/17.
 //  Copyright © 2017 IOS_programming. All rights reserved.
 //
 
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var imageView: UIImageView!
+   
     var lastPoint = CGPoint.zero
     var swiped = false
     var red:CGFloat = 0.0
     var green:CGFloat = 0.0
     var blue: CGFloat = 0.0
-   
+    
     var isDrawing = false
     @IBAction func showShape(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle:
@@ -59,11 +60,11 @@ class ViewController: UIViewController {
         swiped = false
         if let touch = touches.first{
             lastPoint = touch.location(in: self.view)
-           
+            
         }
     }
     func drawLines(fromPoint: CGPoint, toPoint: CGPoint){
-      
+        
         UIGraphicsBeginImageContext(self.view.frame.size)
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
         let context = UIGraphicsGetCurrentContext()
@@ -73,14 +74,14 @@ class ViewController: UIViewController {
         context?.setBlendMode(CGBlendMode.normal)
         context?.setLineWidth(5.0)
         if let red = UserDefaults.standard.object(forKey: "red") ,
-        let green = UserDefaults.standard.object(forKey: "green") ,
+            let green = UserDefaults.standard.object(forKey: "green") ,
             let blue = UserDefaults.standard.object(forKey: "blue") {
             
-        
+            
             context?.setStrokeColor(UIColor(red: red as! CGFloat, green: green as! CGFloat, blue: blue as! CGFloat, alpha: 1.0).cgColor)
             
         }else{
-             context?.setStrokeColor(UIColor(red: 0.0, green:0.0, blue: 0.0, alpha: 1.0).cgColor)
+            context?.setStrokeColor(UIColor(red: 0.0, green:0.0, blue: 0.0, alpha: 1.0).cgColor)
         }
         context?.strokePath()
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
@@ -88,12 +89,12 @@ class ViewController: UIViewController {
         
         
     }
-
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         swiped = true
         if let touch = touches.first{
             let currentPoint = touch.location(in: self.view)
-        
+            
             drawLines(fromPoint: lastPoint, toPoint: currentPoint)
             lastPoint = currentPoint
         }
@@ -112,18 +113,14 @@ class ViewController: UIViewController {
         UserDefaults.standard.set(0.0, forKey: "blue")
         
     }
-  
+    
     @IBAction func save(_ sender: Any) {
         if let image = imageView.image{
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
         }
     }
-
- 
-    func test() {
-        
-    }
     
+   
     
     @IBAction func eraseDrawing(_ sender: Any) {
         
@@ -143,7 +140,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
-

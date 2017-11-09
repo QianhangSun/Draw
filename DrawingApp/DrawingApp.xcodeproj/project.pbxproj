@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DA5C1D2A1FA5267E00BD6202 /* navgationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5C1D291FA5267E00BD6202 /* navgationButton.swift */; };
+		EE29B8C81FA6796B009427A3 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29B8C71FA6796B009427A3 /* NavigationViewController.swift */; };
+		EE29B8CA1FA67CEE009427A3 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29B8C91FA67CEE009427A3 /* ColorViewController.swift */; };
+		EE29B8CC1FA67E82009427A3 /* ShapeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29B8CB1FA67E82009427A3 /* ShapeViewController.swift */; };
+		EE29B8CE1FA68507009427A3 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE29B8CD1FA68507009427A3 /* LineViewController.swift */; };
 		EE7027D31F9D24D800AF5A62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7027D21F9D24D800AF5A62 /* AppDelegate.swift */; };
 		EE7027D51F9D24D800AF5A62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7027D41F9D24D800AF5A62 /* ViewController.swift */; };
 		EE7027D81F9D24D800AF5A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE7027D61F9D24D800AF5A62 /* Main.storyboard */; };
@@ -17,6 +21,10 @@
 
 /* Begin PBXFileReference section */
 		DA5C1D291FA5267E00BD6202 /* navgationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navgationButton.swift; sourceTree = "<group>"; };
+		EE29B8C71FA6796B009427A3 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		EE29B8C91FA67CEE009427A3 /* ColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
+		EE29B8CB1FA67E82009427A3 /* ShapeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeViewController.swift; sourceTree = "<group>"; };
+		EE29B8CD1FA68507009427A3 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		EE7027CF1F9D24D800AF5A62 /* DrawingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7027D21F9D24D800AF5A62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE7027D41F9D24D800AF5A62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +67,10 @@
 				EE7027D21F9D24D800AF5A62 /* AppDelegate.swift */,
 				EE7027D41F9D24D800AF5A62 /* ViewController.swift */,
 				EE7027D61F9D24D800AF5A62 /* Main.storyboard */,
+				EE29B8CD1FA68507009427A3 /* LineViewController.swift */,
+				EE29B8CB1FA67E82009427A3 /* ShapeViewController.swift */,
+				EE29B8C91FA67CEE009427A3 /* ColorViewController.swift */,
+				EE29B8C71FA6796B009427A3 /* NavigationViewController.swift */,
 				DA5C1D291FA5267E00BD6202 /* navgationButton.swift */,
 				EE7027D91F9D24D800AF5A62 /* Assets.xcassets */,
 				EE7027DB1F9D24D800AF5A62 /* LaunchScreen.storyboard */,
@@ -139,8 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE29B8C81FA6796B009427A3 /* NavigationViewController.swift in Sources */,
+				EE29B8CC1FA67E82009427A3 /* ShapeViewController.swift in Sources */,
+				EE29B8CE1FA68507009427A3 /* LineViewController.swift in Sources */,
 				EE7027D51F9D24D800AF5A62 /* ViewController.swift in Sources */,
 				DA5C1D2A1FA5267E00BD6202 /* navgationButton.swift in Sources */,
+				EE29B8CA1FA67CEE009427A3 /* ColorViewController.swift in Sources */,
 				EE7027D31F9D24D800AF5A62 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
