@@ -21,55 +21,62 @@ class ColorViewController: UIViewController {
         
         switch (sender as AnyObject).tag {
         case 1:
-            UserDefaults.standard.set(0.0, forKey: "red")
-            UserDefaults.standard.set(0.0, forKey: "green")
-            UserDefaults.standard.set(0.0, forKey: "blue")
-            self.view.removeFromSuperview()
+   
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 0.0
+            )
+            
         case 2:
-            UserDefaults.standard.set(0.0, forKey: "red")
-            UserDefaults.standard.set(0.0, forKey: "green")
-            UserDefaults.standard.set(1.0, forKey: "blue")
-            self.view.removeFromSuperview()
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 1.0
+            )
+            
         case 3:
-            UserDefaults.standard.set(0.0, forKey: "red")
-            UserDefaults.standard.set(1.0, forKey: "green")
-            UserDefaults.standard.set(0.0, forKey: "blue")
-            self.view.removeFromSuperview()
+    
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 0.0, greenColorFunc: 1.0, blueColorFunc: 0.0
+            )
+            
         case 4:
-            UserDefaults.standard.set(0.0, forKey: "red")
-            UserDefaults.standard.set(1.0, forKey: "green")
-            UserDefaults.standard.set(1.0, forKey: "blue")
-            self.view.removeFromSuperview()
+     
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 0.0, greenColorFunc: 1.0, blueColorFunc: 1.0
+            )
+            
         case 5:
-            UserDefaults.standard.set(1.0, forKey: "red")
-            UserDefaults.standard.set(0.0, forKey: "green")
-            UserDefaults.standard.set(0.0, forKey: "blue")
-            self.view.removeFromSuperview()
+       
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 1.0, greenColorFunc: 0.0, blueColorFunc: 0.0
+            )
+            
         case 6:
-            UserDefaults.standard.set(1.0, forKey: "red")
-            UserDefaults.standard.set(0.0, forKey: "green")
-            UserDefaults.standard.set(1.0, forKey: "blue")
-            self.view.removeFromSuperview()
+          
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 1.0, greenColorFunc: 0.0, blueColorFunc: 0.0
+            )
+            
         case 7:
-            UserDefaults.standard.set(1.0, forKey: "red")
-            UserDefaults.standard.set(1.0, forKey: "green")
-            UserDefaults.standard.set(0.0, forKey: "blue")
-            self.view.removeFromSuperview()
+           
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 0.0
+            )
+            
         case 8:
-            UserDefaults.standard.set(0.5, forKey: "red")
-            UserDefaults.standard.set(0.5, forKey: "green")
-            UserDefaults.standard.set(0.5, forKey: "blue")
-            self.view.removeFromSuperview()
+           
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 0.5, greenColorFunc: 0.5, blueColorFunc: 0.5
+            )
+            
         case 9:
-            UserDefaults.standard.set(1.0, forKey: "red")
-            UserDefaults.standard.set(0.5, forKey: "green")
-            UserDefaults.standard.set(0.0, forKey: "blue")
-            self.view.removeFromSuperview()
+          
+            generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+                redColorFunc: 1.0, greenColorFunc: 0.5, blueColorFunc: 0.0
+            )
             
         default:
             break
-            
         }
+        self.view.removeFromSuperview()
         
     }
     
