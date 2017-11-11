@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DrawingApp
+//  GenerativeArtPlayground
 //
-//  Created by 孙千航 on 10/22/17.
+//  Created by 孙千航 on 11/8/17.
 //  Copyright © 2017 IOS_programming. All rights reserved.
 //
 
