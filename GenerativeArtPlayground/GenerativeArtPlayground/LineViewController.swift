@@ -14,6 +14,12 @@ class LineViewController: UIViewController {
     @IBAction func tapToRemove(_ sender: Any) {
         self.view.removeFromSuperview()
     }
+    
+    @IBAction func lineOnePressed(_ sender: UIButton) {
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA3C744E1FB77C6B005553E9 /* GeneratingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C744D1FB77C6B005553E9 /* GeneratingAlgorithm.swift */; };
 		EE848DF51FB3EDF8000481C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE848DF41FB3EDF8000481C6 /* AppDelegate.swift */; };
 		EE848DF71FB3EDF8000481C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE848DF61FB3EDF8000481C6 /* ViewController.swift */; };
 		EE848DFA1FB3EDF8000481C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE848DF81FB3EDF8000481C6 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA3C744D1FB77C6B005553E9 /* GeneratingAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingAlgorithm.swift; sourceTree = "<group>"; };
 		EE848DF11FB3EDF8000481C6 /* GenerativeArtPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerativeArtPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE848DF41FB3EDF8000481C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE848DF61FB3EDF8000481C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				EE848DF61FB3EDF8000481C6 /* ViewController.swift */,
 				EE848E0A1FB3EFB0000481C6 /* ShapeViewController.swift */,
 				EE848E0C1FB3EFCA000481C6 /* LineViewController.swift */,
+				DA3C744D1FB77C6B005553E9 /* GeneratingAlgorithm.swift */,
 				EE848DF81FB3EDF8000481C6 /* Main.storyboard */,
 				EE848E061FB3EEFE000481C6 /* NavigationViewController.swift */,
 				EE848E081FB3EF80000481C6 /* ColorViewController.swift */,
@@ -151,6 +154,7 @@
 				EE848E071FB3EEFE000481C6 /* NavigationViewController.swift in Sources */,
 				EE848E0B1FB3EFB0000481C6 /* ShapeViewController.swift in Sources */,
 				EE848E0D1FB3EFCA000481C6 /* LineViewController.swift in Sources */,
+				DA3C744E1FB77C6B005553E9 /* GeneratingAlgorithm.swift in Sources */,
 				EE848DF71FB3EDF8000481C6 /* ViewController.swift in Sources */,
 				EE848E091FB3EF80000481C6 /* ColorViewController.swift in Sources */,
 				EE848DF51FB3EDF8000481C6 /* AppDelegate.swift in Sources */,

@@ -14,9 +14,6 @@ class ViewController: UIViewController {
    
     var lastPoint = CGPoint.zero
     var swiped = false
-    var red:CGFloat = 0.0
-    var green:CGFloat = 0.0
-    var blue: CGFloat = 0.0
     
     var isDrawing = false
     @IBAction func showShape(_ sender: Any) {
@@ -67,27 +64,9 @@ class ViewController: UIViewController {
         
         UIGraphicsBeginImageContext(self.view.frame.size)
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        let context = UIGraphicsGetCurrentContext()
-        
-        context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
-        context?.addLine(to:CGPoint(x: toPoint.x, y: toPoint.y))
-        context?.setBlendMode(CGBlendMode.normal)
-        context?.setLineWidth(5.0)
-        if let red = UserDefaults.standard.object(forKey: "red") ,
-            let green = UserDefaults.standard.object(forKey: "green") ,
-            let blue = UserDefaults.standard.object(forKey: "blue") {
-            
-            
-            context?.setStrokeColor(UIColor(red: red as! CGFloat, green: green as! CGFloat, blue: blue as! CGFloat, alpha: 1.0).cgColor)
-            
-        }else{
-            context?.setStrokeColor(UIColor(red: 0.0, green:0.0, blue: 0.0, alpha: 1.0).cgColor)
-        }
-        context?.strokePath()
+        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.generatingPatterns(fromPoint: fromPoint, toPoint: toPoint, typeOfPattenrn: "shape", typeID: 1)
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        
-        
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -105,12 +84,12 @@ class ViewController: UIViewController {
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)
         }
     }
+    
+    
     @IBAction func reset(_ sender: Any) {
         
         self.imageView.image = nil
-        UserDefaults.standard.set(0.0, forKey: "red")
-        UserDefaults.standard.set(0.0, forKey: "green")
-        UserDefaults.standard.set(0.0, forKey: "blue")
+        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 0.0)
         
     }
     
@@ -124,9 +103,9 @@ class ViewController: UIViewController {
     
     @IBAction func eraseDrawing(_ sender: Any) {
         
-        UserDefaults.standard.set(1.0, forKey: "red")
-        UserDefaults.standard.set(1.0, forKey: "green")
-        UserDefaults.standard.set(1.0, forKey: "blue")
+        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+            redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 1.0
+        )
         
     }
     
