@@ -7,12 +7,18 @@
 //
 
 import UIKit
-
+import Pastel
 
 
 class ColorViewController: UIViewController {
     
     
+    
+    @IBOutlet weak var seventhColorView: colorMultipleViews!
+    
+    @IBOutlet weak var eighthColorView: colorMultipleViews!
+    
+    @IBOutlet weak var ninthColorView: colorMultipleViews!
     
     @IBAction func tapToRemove(_ sender: Any) {
         self.view.removeFromSuperview()
@@ -52,7 +58,7 @@ class ColorViewController: UIViewController {
         case 6:
           
             generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
-                redColorFunc: 1.0, greenColorFunc: 0.0, blueColorFunc: 0.0
+                redColorFunc: 1.0, greenColorFunc: 0.5, blueColorFunc: 0.5
             )
             
         case 7:
@@ -85,6 +91,68 @@ class ColorViewController: UIViewController {
         self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         
         // Do any additional setup after loading the view.
+        
+        //for 7 color view
+        let pastelView7 = PastelView(frame: seventhColorView.bounds)
+        
+        // Custom Direction
+        pastelView7.startPastelPoint = .bottomLeft
+        pastelView7.endPastelPoint = .topRight
+        
+        // Custom Duration
+        pastelView7.animationDuration = 3.0
+        
+        // Custom Color
+        pastelView7.setColors([
+            UIColor(red: 250/255, green: 158/255, blue: 200/255, alpha: 1.0),
+            UIColor(red: 200/255, green: 120/255, blue: 100/255, alpha: 1.0),
+            UIColor(red: 180/255, green: 255/255, blue: 50/255, alpha: 1.0)])
+        
+        pastelView7.startAnimation()
+        view.insertSubview(pastelView7, at: 9)
+        pastelView7.center = CGPoint(x: seventhColorView.center.x, y: seventhColorView.center.y)
+        
+        
+        //for 8 color view
+        let pastelView8 = PastelView(frame: eighthColorView.bounds)
+        
+        // Custom Direction
+        pastelView8.startPastelPoint = .bottomLeft
+        pastelView8.endPastelPoint = .topRight
+        
+        // Custom Duration
+        pastelView8.animationDuration = 3.0
+        
+        // Custom Color
+        pastelView8.setColors([
+            UIColor(red: 250/255, green: 158/255, blue: 255/255, alpha: 1.0),
+            UIColor(red: 200/255, green: 120/255, blue: 127/255, alpha: 1.0),
+            UIColor(red: 180/255, green: 255/255, blue: 217/255, alpha: 1.0)])
+        
+        pastelView8.startAnimation()
+        view.insertSubview(pastelView8, at: 9)
+        pastelView8.center = CGPoint(x: eighthColorView.center.x, y: eighthColorView.center.y)
+        
+        
+        //for 9 color view
+        let pastelView9 = PastelView(frame: ninthColorView.bounds)
+        
+        // Custom Direction
+        pastelView9.startPastelPoint = .bottomLeft
+        pastelView9.endPastelPoint = .topRight
+        
+        // Custom Duration
+        pastelView9.animationDuration = 3.0
+        
+        // Custom Color
+        pastelView9.setColors([
+                              UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),
+                              UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
+                              UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])
+        
+        pastelView9.startAnimation()
+        view.insertSubview(pastelView9, at: 9)
+        pastelView9.center = CGPoint(x: ninthColorView.center.x, y: ninthColorView.center.y)
     }
     
     override func didReceiveMemoryWarning() {
