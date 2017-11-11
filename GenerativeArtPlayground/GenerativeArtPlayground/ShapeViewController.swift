@@ -14,6 +14,23 @@ class ShapeViewController: UIViewController {
         self.view.removeFromSuperview()
     }
     
+    
+    @IBAction func switchShape(_ sender: Any)
+    {
+
+        
+        let instance = generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm
+        switch (sender as AnyObject).tag{
+            
+        case 1:
+            instance.typeID = 1
+            instance.typeOfPattern = "shape"
+            
+        default:
+            break
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)

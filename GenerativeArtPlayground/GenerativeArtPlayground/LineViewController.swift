@@ -15,10 +15,20 @@ class LineViewController: UIViewController {
         self.view.removeFromSuperview()
     }
     
-    @IBAction func lineOnePressed(_ sender: UIButton) {
-        
+
+    @IBAction func switchLine(_ sender: Any) {
+        let instance = generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm
+        switch (sender as AnyObject).tag{
+        case 1:
+            instance.typeID = 1
+            instance.typeOfPattern = "curve"
+        case 2:
+            break
+        default:
+            break
+        }
     }
-    
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
