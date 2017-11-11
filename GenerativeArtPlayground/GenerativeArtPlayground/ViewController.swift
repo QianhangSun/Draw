@@ -64,7 +64,7 @@ class ViewController: UIViewController {
         
         UIGraphicsBeginImageContext(self.view.frame.size)
         imageView.image?.draw(in: CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height))
-        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.generatingPatterns(fromPoint: fromPoint, toPoint: toPoint, typeOfPattenrn: "shape", typeID: 1)
+        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.generatingPatterns(fromPoint: fromPoint, toPoint: toPoint)
         imageView.image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
     }
