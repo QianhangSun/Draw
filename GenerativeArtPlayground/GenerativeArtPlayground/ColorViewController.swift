@@ -12,7 +12,7 @@ import Pastel
 
 class ColorViewController: UIViewController {
     
-    
+    var value = 0.0
     
     @IBOutlet weak var seventhColorView: colorMultipleViews!
     
@@ -27,14 +27,17 @@ class ColorViewController: UIViewController {
         
         switch (sender as AnyObject).tag {
         case 1:
-   
+            
             generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
-                redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 0.0
+                redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 1.0
             )
             
         case 2:
+            
+            value = value+1
+            let x = Float(abs(sin(value/50)))
             generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
-                redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 1.0
+                redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: x
             )
             
         case 3:

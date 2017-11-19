@@ -14,20 +14,20 @@ class generatingAlogrithm {
     
     
     //RGB
-    var colorRed: Float = 0.0
-    var colorGreen: Float = 0.0
-    var colorBlue: Float = 0.0
-    
+    var colorRed: Float = 1.0
+    var colorGreen: Float = 1.0
+    var colorBlue: Float = 1.0
+    var n = 0
     var typeOfPattern:String = "curve"
     var typeID:Int = 1
     
     
     func generatingPatterns(fromPoint: CGPoint, toPoint: CGPoint) {
-       
+        let context = UIGraphicsGetCurrentContext()
         if typeOfPattern == "shape"{
             switch typeID {
             case 1:
-                let context = UIGraphicsGetCurrentContext()
+
                 let xJudge = fromPoint.x .truncatingRemainder(dividingBy: 10)
                 let yJudge = fromPoint.y .truncatingRemainder(dividingBy: 10)
                 let offset:CGFloat = 15.0
@@ -44,10 +44,38 @@ class generatingAlogrithm {
                 context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
                 context?.strokePath()
             case 2:
-                break
+                let context = UIGraphicsGetCurrentContext()
+                context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
+                context?.addLine(to:CGPoint(x: toPoint.x, y: toPoint.y))
+                context?.move(to:CGPoint(x: 375-fromPoint.x, y: fromPoint.y))
+                context?.addLine(to:CGPoint(x: 375-toPoint.x, y: toPoint.y))
+                context?.setLineWidth(5.0)
+                
+            case 3:
+                let context = UIGraphicsGetCurrentContext()
+                context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
+                context?.addLine(to:CGPoint(x: toPoint.x, y: toPoint.y))
+                context?.move(to:CGPoint(x: 375-fromPoint.x, y: fromPoint.y))
+                context?.addLine(to:CGPoint(x: 375-toPoint.x, y: toPoint.y))
+                context?.move(to:CGPoint(x: 375-fromPoint.x, y: 667-fromPoint.y))
+                context?.addLine(to:CGPoint(x: 375-toPoint.x, y: 667-toPoint.y))
+                context?.move(to:CGPoint(x: fromPoint.x, y: 667-fromPoint.y))
+                context?.addLine(to:CGPoint(x: toPoint.x, y: 667-toPoint.y))
+                context?.setBlendMode(CGBlendMode.normal)
+                context?.setLineWidth(5.0)
+            case 4:
+                let context = UIGraphicsGetCurrentContext()
+                context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
+                context?.addQuadCurve(to: CGPoint(x:toPoint.x,y:toPoint.y), control: CGPoint(x: 50, y: 150))
+                context?.setLineWidth(2.0)
             default:
                 break
             }
+            
+            context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+            context?.strokePath()
+            
+            
         } else if typeOfPattern == "curve" {
             switch typeID {
             case 1:
