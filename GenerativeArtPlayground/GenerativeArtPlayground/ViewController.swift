@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     @IBAction func reset(_ sender: Any) {
         
         self.imageView.image = nil
-        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 0.0)
+        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 1.0)
         
     }
     
@@ -104,7 +104,7 @@ class ViewController: UIViewController {
     @IBAction func eraseDrawing(_ sender: Any) {
         
         generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
-            redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 1.0
+            redColorFunc: 0.0, greenColorFunc: 0.0, blueColorFunc: 0.0
         )
         
     }
