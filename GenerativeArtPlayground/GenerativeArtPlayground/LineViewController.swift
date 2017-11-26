@@ -23,7 +23,13 @@ class LineViewController: UIViewController {
             instance.typeID = 1
             instance.typeOfPattern = "curve"
         case 2:
+            instance.typeID = 2
+            instance.typeOfPattern = "curve"
+        case 3:
             break
+        case 4:
+            instance.typeID = 4
+            instance.typeOfPattern = "curve"
         default:
             break
         }

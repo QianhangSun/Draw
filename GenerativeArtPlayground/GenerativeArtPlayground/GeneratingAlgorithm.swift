@@ -33,6 +33,7 @@ class generatingAlogrithm {
             switch typeID {
             //Double Circle
             case 1:
+                // double circle
                  let context = UIGraphicsGetCurrentContext()
                 let xJudge = fromPoint.x .truncatingRemainder(dividingBy: 10)
                 let yJudge = fromPoint.y .truncatingRemainder(dividingBy: 10)
@@ -56,6 +57,7 @@ class generatingAlogrithm {
                 
             //Quad Curve
             case 2:
+                // symmetric shape
                 let context = UIGraphicsGetCurrentContext()
                 context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
                 context?.addQuadCurve(to: CGPoint(x:toPoint.x,y:toPoint.y), control: CGPoint(x: 50, y: 150))
@@ -173,6 +175,39 @@ class generatingAlogrithm {
                 context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
                 context?.strokePath()
                 break
+            case 2:
+                //branch curve
+                let context = UIGraphicsGetCurrentContext()
+                let w :CGFloat = (CGFloat(arc4random()%100)+100.0)/10
+                
+                let animationX = w * (toPoint.x - fromPoint.x + 1) + fromPoint.x
+                let animationY = w * (toPoint.y - fromPoint.y + 1) + fromPoint.y
+                let animationX2 = w * (toPoint.x - fromPoint.x + 1) + fromPoint.x
+                let animationY2 = w * (toPoint.y - fromPoint.y + 1) + fromPoint.y
+                context?.move(to:fromPoint)
+                context?.addQuadCurve(to: CGPoint(x:animationX, y:animationY) , control: CGPoint(x: (fromPoint.x+toPoint.x)/2, y:(fromPoint.y - 10.0)))
+                context?.move(to:fromPoint)
+                context?.addQuadCurve(to: CGPoint(x:animationX2, y:animationY2) , control: CGPoint(x: (fromPoint.x+toPoint.x)/2, y:(toPoint.y)))
+                context?.setLineWidth(2.0)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+                context?.strokePath()
+            case 3: break
+            case 4:
+                //wing curve
+                let context = UIGraphicsGetCurrentContext()
+                let w :CGFloat = (CGFloat(arc4random()%100)+100.0)/20
+            
+                let animationX = w * (toPoint.x - fromPoint.x + 1) + fromPoint.x
+                let animationY = w * (toPoint.y - fromPoint.y + 1) + fromPoint.y
+                let animationX2 = w * (toPoint.x - fromPoint.x + 1) + fromPoint.x
+                let animationY2 = w * (toPoint.y - fromPoint.y + 1) + fromPoint.y
+                context?.move(to:fromPoint)
+                context?.addQuadCurve(to: CGPoint(x:animationX, y:animationY) , control: CGPoint(x: (fromPoint.x+toPoint.x)/2, y:(fromPoint.y - 10.0)))
+                context?.move(to:fromPoint)
+                context?.addQuadCurve(to: CGPoint(x:animationX2, y:animationY2) , control: CGPoint(x: (fromPoint.x+toPoint.x)/2, y:(toPoint.y)))
+                context?.setLineWidth(2.0)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 0.2).cgColor)
+                context?.strokePath()
             default: break
             }
         }

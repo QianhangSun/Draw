@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     var swiped = false
     
     var isDrawing = false
+    var imageStack : [UIImage] = [UIImage]()
     @IBAction func showShape(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle:
             nil).instantiateViewController(withIdentifier: "ShapePopUp") as! ShapeViewController
@@ -83,6 +84,7 @@ class ViewController: UIViewController {
         if !swiped{
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)
         }
+        imageStack.append(self.imageView.image!)
     }
     
     
@@ -93,6 +95,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func goBack(_ sender: Any) {
+        imageStack.popLast()
+        self.imageView.image = imageStack.last
+        
+    }
     @IBAction func save(_ sender: Any) {
         if let image = imageView.image{
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
