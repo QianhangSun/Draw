@@ -9,12 +9,13 @@
 import UIKit
 
 open class PastelView: UIView {
-
+    
     private struct Animation {
         static let keyPath = "colors"
         static let key = "ColorChange"
     }
     
+  
     @objc
     public enum PastelPoint: Int {
         case left
@@ -78,11 +79,14 @@ open class PastelView: UIView {
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
+        self.layer.cornerRadius = 24.0
     }
     
     public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
+    
+    
     
     open override func awakeFromNib() {
         super.awakeFromNib()
