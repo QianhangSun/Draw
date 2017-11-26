@@ -23,6 +23,24 @@ class ColorViewController: UIViewController {
     @IBAction func tapToRemove(_ sender: Any) {
         self.view.removeFromSuperview()
     }
+    @IBOutlet weak var firstButton: UIButton!
+ 
+    @IBOutlet weak var secondButton: UIButton!
+    
+    @IBOutlet weak var thirdButton: UIButton!
+    
+    @IBOutlet weak var fourthButton: UIButton!
+    
+    @IBOutlet weak var fifthButton: UIButton!
+    
+    @IBOutlet weak var sixthButton: UIButton!
+    
+    @IBOutlet weak var seventhButton: UIButton!
+    
+    @IBOutlet weak var eighthButton: UIButton!
+    
+    @IBOutlet weak var ninthButton: UIButton!
+    
     @IBAction func colorChosen(_ sender: Any) {
         
         switch (sender as AnyObject).tag {
@@ -91,12 +109,26 @@ class ColorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        secondButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        thirdButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        fourthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        fifthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        sixthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        seventhButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        eighthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        ninthColorView.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+        
+     
+        
+        
         self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)
         
         // Do any additional setup after loading the view.
         
         //for 7 color view
         let pastelView7 = PastelView(frame: seventhColorView.bounds)
+        pastelView7.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
         
         // Custom Direction
         pastelView7.startPastelPoint = .bottomLeft
@@ -112,9 +144,12 @@ class ColorViewController: UIViewController {
             UIColor(red: 180/255, green: 255/255, blue: 50/255, alpha: 1.0)])
         
         pastelView7.startAnimation()
-        view.insertSubview(pastelView7, at: 9)
-        pastelView7.center = CGPoint(x: seventhColorView.center.x, y: seventhColorView.center.y)
+  
+        seventhColorView.insertSubview(pastelView7, at: 9)
+//        pastelView7.center = CGPoint(x: seventhColorView.center.x, y: seventhColorView.center.y)
         
+        seventhColorView.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+
         
         //for 8 color view
         let pastelView8 = PastelView(frame: eighthColorView.bounds)
