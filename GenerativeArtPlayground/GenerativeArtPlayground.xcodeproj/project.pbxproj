@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A8E41C2FBD10B7504EB3EAF0 /* Pods_GenerativeArtPlayground.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89791B38C98BB8C4CB4DD11F /* Pods_GenerativeArtPlayground.framework */; };
+		DA2E1FCB1FCB94C100A3710A /* colorMutipleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E1FCA1FCB94C000A3710A /* colorMutipleView.swift */; };
+		DA2E1FCD1FCB94F000A3710A /* colorMultipleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2E1FCC1FCB94F000A3710A /* colorMultipleViews.swift */; };
 		DA3C744E1FB77C6B005553E9 /* GeneratingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C744D1FB77C6B005553E9 /* GeneratingAlgorithm.swift */; };
-		DA3C74501FB7AA17005553E9 /* colorMultipleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C744F1FB7AA17005553E9 /* colorMultipleViews.swift */; };
 		EE848DF51FB3EDF8000481C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE848DF41FB3EDF8000481C6 /* AppDelegate.swift */; };
 		EE848DF71FB3EDF8000481C6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE848DF61FB3EDF8000481C6 /* ViewController.swift */; };
 		EE848DFA1FB3EDF8000481C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE848DF81FB3EDF8000481C6 /* Main.storyboard */; };
@@ -25,8 +26,9 @@
 		08C5CE3DCF241420177B3F7E /* Pods-GenerativeArtPlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenerativeArtPlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-GenerativeArtPlayground/Pods-GenerativeArtPlayground.release.xcconfig"; sourceTree = "<group>"; };
 		89791B38C98BB8C4CB4DD11F /* Pods_GenerativeArtPlayground.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenerativeArtPlayground.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25568954E806CEC7DF4101C /* Pods-GenerativeArtPlayground.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenerativeArtPlayground.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GenerativeArtPlayground/Pods-GenerativeArtPlayground.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2E1FCA1FCB94C000A3710A /* colorMutipleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorMutipleView.swift; sourceTree = "<group>"; };
+		DA2E1FCC1FCB94F000A3710A /* colorMultipleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorMultipleViews.swift; sourceTree = "<group>"; };
 		DA3C744D1FB77C6B005553E9 /* GeneratingAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratingAlgorithm.swift; sourceTree = "<group>"; };
-		DA3C744F1FB7AA17005553E9 /* colorMultipleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorMultipleViews.swift; sourceTree = "<group>"; };
 		EE848DF11FB3EDF8000481C6 /* GenerativeArtPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenerativeArtPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE848DF41FB3EDF8000481C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE848DF61FB3EDF8000481C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,9 +98,10 @@
 				EE848E0C1FB3EFCA000481C6 /* LineViewController.swift */,
 				DA3C744D1FB77C6B005553E9 /* GeneratingAlgorithm.swift */,
 				EE848DF81FB3EDF8000481C6 /* Main.storyboard */,
-				DA3C744F1FB7AA17005553E9 /* colorMultipleViews.swift */,
 				EE848E061FB3EEFE000481C6 /* NavigationViewController.swift */,
 				EE848E081FB3EF80000481C6 /* ColorViewController.swift */,
+				DA2E1FCA1FCB94C000A3710A /* colorMutipleView.swift */,
+				DA2E1FCC1FCB94F000A3710A /* colorMultipleViews.swift */,
 				EE848DFB1FB3EDF8000481C6 /* Assets.xcassets */,
 				EE848DFD1FB3EDF8000481C6 /* LaunchScreen.storyboard */,
 				EE848E001FB3EDF8000481C6 /* Info.plist */,
@@ -238,11 +241,12 @@
 				EE848E071FB3EEFE000481C6 /* NavigationViewController.swift in Sources */,
 				EE848E0B1FB3EFB0000481C6 /* ShapeViewController.swift in Sources */,
 				EE848E0D1FB3EFCA000481C6 /* LineViewController.swift in Sources */,
+				DA2E1FCB1FCB94C100A3710A /* colorMutipleView.swift in Sources */,
 				DA3C744E1FB77C6B005553E9 /* GeneratingAlgorithm.swift in Sources */,
-				DA3C74501FB7AA17005553E9 /* colorMultipleViews.swift in Sources */,
 				EE848DF71FB3EDF8000481C6 /* ViewController.swift in Sources */,
 				EE848E091FB3EF80000481C6 /* ColorViewController.swift in Sources */,
 				EE848DF51FB3EDF8000481C6 /* AppDelegate.swift in Sources */,
+				DA2E1FCD1FCB94F000A3710A /* colorMultipleViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

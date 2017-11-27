@@ -1,5 +1,5 @@
 //
-//  colorMultipleViews.swift
+//  colorMutipleView.swift
 //  GenerativeArtPlayground
 //
 //  Created by Jiahui Zhou on 11/26/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class colorMultipleViews: UIView {
+class colorMutipleView: UIView {
 
     /*
     // Only override draw() if you perform custom drawing.
