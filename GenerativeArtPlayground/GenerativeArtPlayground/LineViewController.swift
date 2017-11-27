@@ -22,14 +22,50 @@ class LineViewController: UIViewController {
         case 1:
             instance.typeID = 1
             instance.typeOfPattern = "curve"
+            break
         case 2:
             instance.typeID = 2
             instance.typeOfPattern = "curve"
+            break
         case 3:
+            instance.typeID = 3
+            instance.typeOfPattern = "curve"
             break
         case 4:
             instance.typeID = 4
             instance.typeOfPattern = "curve"
+            break
+            
+        case 5:
+            instance.typeID = 5
+            instance.typeOfPattern = "curve"
+            break
+            
+            
+        case 6:
+            instance.typeID = 6
+            instance.typeOfPattern = "curve"
+            break
+            
+            
+        case 7:
+            instance.typeID = 7
+            instance.typeOfPattern = "curve"
+            break
+            
+            
+            
+        case 8:
+            instance.typeID = 8
+            instance.typeOfPattern = "curve"
+            break
+            
+            
+        case 9:
+            instance.typeID = 9
+            instance.typeOfPattern = "curve"
+            break
+            
         default:
             break
         }

@@ -39,6 +39,30 @@ class ShapeViewController: UIViewController {
             instance.typeOfPattern = "shape"
             self.view.removeFromSuperview()
             
+        case 5:
+            instance.typeID = 5
+            instance.typeOfPattern = "shape"
+            self.view.removeFromSuperview()
+            
+        case 6:
+            instance.typeID = 6
+            instance.typeOfPattern = "shape"
+            self.view.removeFromSuperview()
+            
+        case 7:
+            instance.typeID = 7
+            instance.typeOfPattern = "shape"
+            self.view.removeFromSuperview()
+            
+        case 8:
+            instance.typeID = 8
+            instance.typeOfPattern = "shape"
+            self.view.removeFromSuperview()
+            
+        case 9:
+            instance.typeID = 9
+            instance.typeOfPattern = "shape"
+            self.view.removeFromSuperview()
         default:
             break
         }
