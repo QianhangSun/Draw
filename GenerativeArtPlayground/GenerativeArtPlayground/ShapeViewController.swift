@@ -25,6 +25,7 @@ class ShapeViewController: UIViewController {
         case 1:
             instance.typeID = 1
             instance.typeOfPattern = "shape"
+        
             self.view.removeFromSuperview()
         case 2:
             instance.typeID = 2

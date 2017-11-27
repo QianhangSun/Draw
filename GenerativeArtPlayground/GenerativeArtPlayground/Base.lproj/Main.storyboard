@@ -96,6 +96,7 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="cKo-8k-coQ" id="djh-KQ-0QO"/>
+                        <outlet property="shapeButton" destination="8cp-iv-9Yn" id="PVt-w0-AUq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

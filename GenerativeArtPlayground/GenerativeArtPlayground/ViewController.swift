@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
    
+    @IBOutlet weak  var shapeButton: UIButton!
     var lastPoint = CGPoint.zero
     var swiped = false
     
