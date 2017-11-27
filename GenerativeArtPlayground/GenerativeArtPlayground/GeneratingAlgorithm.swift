@@ -143,6 +143,17 @@ class generatingAlogrithm {
                 
           
             case 2:
+                let context = UIGraphicsGetCurrentContext()
+                context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
+                context?.addLine(to:CGPoint(x: toPoint.x, y: toPoint.y))
+                context?.move(to:CGPoint(x: 375-fromPoint.x, y: fromPoint.y))
+                context?.addLine(to:CGPoint(x: 375-toPoint.x, y: toPoint.y))
+               
+                context?.setBlendMode(CGBlendMode.normal)
+                context?.setLineWidth(5.0)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+                context?.strokePath()
+                
               
                 break
                 
