@@ -109,20 +109,20 @@ class ColorViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        secondButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        thirdButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        fourthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        fifthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        sixthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        seventhButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        eighthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
-        ninthColorView.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        firstButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        secondButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        thirdButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        fourthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        fifthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        sixthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        seventhButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        eighthButton.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
+//        ninthColorView.layer.cornerRadius = 0.5 * firstButton.bounds.size.width
         
      
         
         
-        self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.5)
         
         // Do any additional setup after loading the view.
         
