@@ -11,7 +11,7 @@ import UIKit
 
 class generatingAlogrithm {
     static let sharedInstanceOfGeneratingAlgorithm : generatingAlogrithm = generatingAlogrithm()
-    
+    var imageStack : [UIImage] = [UIImage]()
     
     //RGB
     var colorRed: Float = 1.0
