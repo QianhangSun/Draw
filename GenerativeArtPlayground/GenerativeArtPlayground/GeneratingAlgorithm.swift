@@ -11,7 +11,7 @@ import UIKit
 
 class generatingAlogrithm {
     static let sharedInstanceOfGeneratingAlgorithm : generatingAlogrithm = generatingAlogrithm()
-    
+    var imageStack : [UIImage] = [UIImage]()
     
     //RGB
     var colorRed: Float = 1.0
@@ -50,7 +50,7 @@ class generatingAlogrithm {
                 context?.setLineWidth(5.0)
 //                let mysize:CGSize = CGSize(width:1, height:-1.0)
 //                context?.setShadow(offset: mysize, blur: 1.0)
-                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 0.2).cgColor)
 //                Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.timerFinished(_ toPoint)), userInfo: nil, repeats: true)
                 
                 context?.strokePath()
@@ -62,7 +62,7 @@ class generatingAlogrithm {
                 context?.move(to:CGPoint(x: fromPoint.x, y: fromPoint.y))
                 context?.addQuadCurve(to: CGPoint(x:toPoint.x,y:toPoint.y), control: CGPoint(x: 50, y: 150))
                 context?.setLineWidth(2.0)
-                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 0.2).cgColor)
                 context?.strokePath()
                 break
               
@@ -170,7 +170,7 @@ class generatingAlogrithm {
                
                 context?.setBlendMode(CGBlendMode.normal)
                 context?.setLineWidth(5.0)
-                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 0.2).cgColor)
                 context?.strokePath()
                 
               
@@ -190,7 +190,7 @@ class generatingAlogrithm {
                 context?.addLine(to:CGPoint(x: toPoint.x, y: 667-toPoint.y))
                 context?.setBlendMode(CGBlendMode.normal)
                 context?.setLineWidth(5.0)
-                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 1.0).cgColor)
+                context?.setStrokeColor(UIColor(red: CGFloat(colorRed), green:CGFloat(colorGreen), blue: CGFloat(colorBlue), alpha: 0.2).cgColor)
                 context?.strokePath()
                 break
                 
