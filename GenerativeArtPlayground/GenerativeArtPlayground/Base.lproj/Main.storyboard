@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cp-iv-9Yn">
-                                <rect key="frame" x="130" y="55" width="40" height="40"/>
+                                <rect key="frame" x="167" y="55" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-2"/>
                                 <connections>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61w-tt-frD">
-                                <rect key="frame" x="214" y="583" width="40" height="40"/>
+                                <rect key="frame" x="304" y="584" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-5"/>
                                 <connections>
@@ -55,7 +55,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShT-tQ-dTA">
-                                <rect key="frame" x="289" y="584" width="40" height="40"/>
+                                <rect key="frame" x="95" y="55" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-7"/>
                                 <connections>
@@ -63,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8o-4v-GaN">
-                                <rect key="frame" x="214" y="55" width="40" height="40"/>
+                                <rect key="frame" x="236" y="55" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="shapeButton"/>
                                 <state key="normal" image="icon-3"/>
@@ -72,7 +72,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmz-Jy-hi8">
-                                <rect key="frame" x="95" y="584" width="100" height="40"/>
+                                <rect key="frame" x="137" y="584" width="100" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icon-6"/>
                                 <connections>
@@ -130,26 +130,26 @@
                                     <action selector="switchLine:" destination="fid-Rg-n6V" eventType="touchUpInside" id="zZ6-Ra-0dF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlz-t4-UD1">
-                                <rect key="frame" x="100" y="318" width="37" height="30"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlz-t4-UD1">
+                                <rect key="frame" x="99" y="313" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Line7"/>
+                                <state key="normal" image="lines-7"/>
                                 <connections>
                                     <action selector="switchLine:" destination="fid-Rg-n6V" eventType="touchUpInside" id="ysD-PP-lvg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhY-mR-rOu">
-                                <rect key="frame" x="173" y="318" width="38" height="30"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhY-mR-rOu">
+                                <rect key="frame" x="172" y="313" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Line8"/>
+                                <state key="normal" image="lines-8"/>
                                 <connections>
                                     <action selector="switchLine:" destination="fid-Rg-n6V" eventType="touchUpInside" id="9Rl-AC-Sfa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-E2-QWO">
-                                <rect key="frame" x="247" y="254" width="38" height="30"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzJ-E2-QWO">
+                                <rect key="frame" x="246" y="249" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Line6"/>
+                                <state key="normal" image="lines-6"/>
                                 <connections>
                                     <action selector="switchLine:" destination="fid-Rg-n6V" eventType="touchUpInside" id="c7j-Sf-DBh"/>
                                 </connections>
@@ -178,10 +178,10 @@
                                     <action selector="switchLine:" destination="fid-Rg-n6V" eventType="touchUpInside" id="6Jq-pj-Di4"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fId-ZW-Bku">
-                                <rect key="frame" x="241" y="318" width="51" height="31"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fId-ZW-Bku">
+                                <rect key="frame" x="247" y="314" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Line9"/>
+                                <state key="normal" image="lines-9"/>
                                 <connections>
                                     <action selector="switchLine:" destination="fid-Rg-n6V" eventType="touchUpInside" id="hIf-8r-dhy"/>
                                 </connections>
@@ -244,42 +244,42 @@
                                     <action selector="switchShape:" destination="wXA-86-vXL" eventType="touchUpInside" id="wxP-P7-M3w"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-au-YIr">
-                                <rect key="frame" x="161" y="255" width="53" height="30"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTd-au-YIr">
+                                <rect key="frame" x="168" y="250" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Shape5"/>
+                                <state key="normal" image="shape-5"/>
                                 <connections>
                                     <action selector="switchShape:" destination="wXA-86-vXL" eventType="touchUpInside" id="fGX-r0-aJJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzT-KO-Sa6">
-                                <rect key="frame" x="230" y="255" width="53" height="30"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzT-KO-Sa6">
+                                <rect key="frame" x="237" y="250" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Shape6"/>
+                                <state key="normal" image="shape-6"/>
                                 <connections>
                                     <action selector="switchShape:" destination="wXA-86-vXL" eventType="touchUpInside" id="faU-mC-IVZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-P7-Vmn">
-                                <rect key="frame" x="98" y="310" width="52" height="30"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2T-P7-Vmn">
+                                <rect key="frame" x="104" y="305" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Shape7"/>
+                                <state key="normal" image="shape-7"/>
                                 <connections>
                                     <action selector="switchShape:" destination="wXA-86-vXL" eventType="touchUpInside" id="Bv3-3M-ieS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZt-eh-0Ka">
-                                <rect key="frame" x="161" y="310" width="53" height="30"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZt-eh-0Ka">
+                                <rect key="frame" x="168" y="305" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Shape8"/>
+                                <state key="normal" image="shape-8"/>
                                 <connections>
                                     <action selector="switchShape:" destination="wXA-86-vXL" eventType="touchUpInside" id="Gbm-E1-UQL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-9Y-qQn">
-                                <rect key="frame" x="230" y="310" width="53" height="30"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O5s-9Y-qQn">
+                                <rect key="frame" x="237" y="305" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Shape9"/>
+                                <state key="normal" image="shape-9"/>
                                 <connections>
                                     <action selector="switchShape:" destination="wXA-86-vXL" eventType="touchUpInside" id="Hvb-cI-1Ep"/>
                                 </connections>
@@ -534,9 +534,18 @@
         <image name="lines-3" width="40" height="40"/>
         <image name="lines-4" width="40" height="40"/>
         <image name="lines-5" width="40" height="40"/>
+        <image name="lines-6" width="40" height="40"/>
+        <image name="lines-7" width="40" height="40"/>
+        <image name="lines-8" width="40" height="40"/>
+        <image name="lines-9" width="40" height="40"/>
         <image name="shape-1" width="40" height="40"/>
         <image name="shape-2" width="40" height="40"/>
         <image name="shape-3" width="40" height="40"/>
         <image name="shape-4" width="40" height="40"/>
+        <image name="shape-5" width="40" height="40"/>
+        <image name="shape-6" width="40" height="40"/>
+        <image name="shape-7" width="40" height="40"/>
+        <image name="shape-8" width="40" height="40"/>
+        <image name="shape-9" width="40" height="40"/>
     </resources>
 </document>
