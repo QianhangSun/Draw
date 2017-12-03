@@ -23,6 +23,7 @@ class LineViewController: UIViewController {
             instance.typeID = 1
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+        
             break
         case 2:
             instance.typeID = 2

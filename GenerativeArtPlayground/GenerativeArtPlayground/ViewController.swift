@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
    
     @IBOutlet weak  var shapeButton: UIButton!
+    
     var lastPoint = CGPoint.zero
     var swiped = false
     
@@ -104,6 +105,7 @@ class ViewController: UIViewController {
     @IBAction func save(_ sender: Any) {
         if let image = imageView.image{
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        
         }
     }
     
