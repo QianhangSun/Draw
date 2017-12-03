@@ -59,6 +59,7 @@ class ShapeViewController: UIViewController {
             instance.typeID = 5
             instance.typeOfPattern = "shape"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
             firstViewController.shapeButton.setImage(UIImage(named:"shape-5"), for: .normal)
             
         case 6:
