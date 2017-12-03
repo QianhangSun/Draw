@@ -16,7 +16,7 @@ class NavigationViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.9)
         
         // Do any additional setup after loading the view.
     }

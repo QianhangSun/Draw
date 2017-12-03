@@ -9,16 +9,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
+    let instance = generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm
     @IBOutlet weak var imageView: UIImageView!
-   
+    @IBOutlet weak var colorButton: UIButton!
+    @IBOutlet weak var lineButton: UIButton!
     @IBOutlet weak  var shapeButton: UIButton!
     
     var lastPoint = CGPoint.zero
     var swiped = false
     
+
     var isDrawing = false
-    var imageStack : [UIImage] = [UIImage]()
+
     @IBAction func showShape(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle:
             nil).instantiateViewController(withIdentifier: "ShapePopUp") as! ShapeViewController
@@ -86,7 +88,7 @@ class ViewController: UIViewController {
         if !swiped{
             drawLines(fromPoint: lastPoint, toPoint: lastPoint)
         }
-        imageStack.append(self.imageView.image!)
+        instance.imageStack.append(self.imageView.image!)
     }
     
     
@@ -98,8 +100,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func goBack(_ sender: Any) {
-        imageStack.popLast()
-        self.imageView.image = imageStack.last
+        instance.imageStack.popLast()
+        self.imageView.image = instance.imageStack.last
         
     }
     @IBAction func save(_ sender: Any) {
@@ -119,10 +121,13 @@ class ViewController: UIViewController {
         
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func updateButton() {
+        shapeButton.setImage(UIImage(named:"shape2.png"), for: .normal)
     }
     
     override func didReceiveMemoryWarning() {

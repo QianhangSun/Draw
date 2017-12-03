@@ -17,34 +17,55 @@ class LineViewController: UIViewController {
     
 
     @IBAction func switchLine(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let firstViewController = storyboard.instantiateViewController(withIdentifier: "MainPopUp") as! ViewController
         let instance = generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm
         switch (sender as AnyObject).tag{
         case 1:
             instance.typeID = 1
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
-        
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-1"), for: .normal)
+            
             break
         case 2:
             instance.typeID = 2
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-2"), for: .normal)
+
             break
         case 3:
             instance.typeID = 3
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-3"), for: .normal)
+
             break
         case 4:
             instance.typeID = 4
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-4"), for: .normal)
+
             break
             
         case 5:
             instance.typeID = 5
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-5"), for: .normal)
+
             break
             
             
@@ -52,6 +73,10 @@ class LineViewController: UIViewController {
             instance.typeID = 6
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-6"), for: .normal)
+
             break
             
             
@@ -59,6 +84,10 @@ class LineViewController: UIViewController {
             instance.typeID = 7
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-7"), for: .normal)
+
             break
             
             
@@ -67,6 +96,10 @@ class LineViewController: UIViewController {
             instance.typeID = 8
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-8"), for: .normal)
+
             break
             
             
@@ -74,17 +107,24 @@ class LineViewController: UIViewController {
             instance.typeID = 9
             instance.typeOfPattern = "curve"
             self.view.removeFromSuperview()
+            self.present(firstViewController, animated: false)
+
+            firstViewController.lineButton.setImage(UIImage(named:"lines-9"), for: .normal)
+
             break
             
         default:
             break
+            
+            
         }
+         firstViewController.imageView.image = instance.imageStack.last
     }
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white.withAlphaComponent(0.8)
+        self.view.backgroundColor = UIColor.black.withAlphaComponent(0.8)
         
         // Do any additional setup after loading the view.
     }
