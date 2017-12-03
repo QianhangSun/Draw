@@ -94,7 +94,7 @@ class ViewController: UIViewController {
     
     @IBAction func reset(_ sender: Any) {
         
-        self.imageView.image = nil
+        self.imageView.image = UIImage(named:"b")
         instance.imageStack.removeAll()
         generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 1.0)
         

@@ -98,6 +98,9 @@ class ShapeViewController: UIViewController {
       
         }
               firstViewController.imageView.image = instance.imageStack.last
+        generatingAlogrithm.sharedInstanceOfGeneratingAlgorithm.colorChange(
+            redColorFunc: 1.0, greenColorFunc: 1.0, blueColorFunc: 1.0
+        )
     }
     
     override func viewDidLoad() {
