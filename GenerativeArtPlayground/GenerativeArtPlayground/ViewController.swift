@@ -107,9 +107,9 @@ class ViewController: UIViewController {
     }
     @IBAction func save(_ sender: Any) {
         
-        
         if let image = imageView.image{
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+            UIImageWriteToSavedPhotosAlbum(image , nil, nil, nil)
+           
         }
     }
     
@@ -125,6 +125,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
         // Do any additional setup after loading the view, typically from a nib.
     }
     
